@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0077C8" />
+  <title>張富傑｜AI 顧問・資料科學家・生成式 AI 講師｜Helping Businesses Transform Data Into Decisions</title>
+  <meta name="description" content="張富傑，臺灣行銷研究有限公司創辦人。以 AI、資料科學與商業策略協助企業導入生成式 AI、建立數據驅動文化，打造可衡量的商業成果。立即預約顧問諮詢。" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="張富傑｜AI 顧問・資料科學家・生成式 AI 講師" />
+  <meta property="og:description" content="Helping Businesses Transform Data Into Decisions. 以 AI、資料科學與商業策略協助企業建立競爭優勢。" />
+  <meta property="og:url" content="https://calendar.app.google/n27ug3YwWKoegnSQ8" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="張富傑｜AI 顧問・資料科學家・生成式 AI 講師" />
+  <meta name="twitter:description" content="以 AI、資料科學與商業策略協助企業完成數位轉型、導入生成式 AI，建立數據驅動決策。" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0077C8',
+              purple: '#008BD3',
+              emerald: '#00A651',
+              ink: '#1A1A1A'
+            },
+            blue: {
+              50: '#E8F1FA',
+              100: '#D0E3F5',
+              200: '#A1C7EB',
+              600: '#0077C8'
+            },
+            violet: {
+              50: '#E8F1FA',
+              600: '#008BD3'
+            },
+            emerald: {
+              50: '#E8F7F0',
+              500: '#00A651',
+              600: '#00A651'
+            }
+          },
+          boxShadow: {
+            soft: '0 20px 60px rgba(26, 26, 26, 0.08)',
+            glow: '0 0 0 1px rgba(0, 119, 200, 0.10), 0 18px 50px rgba(0, 119, 200, 0.14)'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' }
+            },
+            shine: {
+              '0%': { backgroundPosition: '-200% center' },
+              '100%': { backgroundPosition: '200% center' }
+            },
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(24px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.45', transform: 'scale(1)' },
+              '50%': { opacity: '0.8', transform: 'scale(1.06)' }
+            },
+            dash: {
+              to: { strokeDashoffset: '-1000' }
+            }
+          },
+          animation: {
+            float: 'float 8s ease-in-out infinite',
+            shine: 'shine 6s linear infinite',
+            fadeUp: 'fadeUp 0.8s ease both',
+            pulseGlow: 'pulseGlow 6s ease-in-out infinite',
+            dash: 'dash 18s linear infinite'
+          },
+          backgroundImage: {
+            'hero-grad': 'linear-gradient(135deg, rgba(0,119,200,0.10), rgba(0,139,211,0.08), rgba(0,166,81,0.08))'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(0,119,200,0.10), transparent 28%),
+        radial-gradient(circle at top right, rgba(0,139,211,0.08), transparent 22%),
+        linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      color: #1A1A1A;
+    }
+    ::selection { background: rgba(0,119,200,0.18); }
+
+    /* Glassmorphism Navbar */
+    .glass-nav {
+      background: rgba(255,255,255,0.70);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border-bottom: 1px solid rgba(148,163,184,0.18);
+    }
+
+    .glass-card {
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(148,163,184,0.16);
+    }
+
+    .gradient-border {
+      position: relative;
+      z-index: 0;
+    }
+    .gradient-border::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      border-radius: inherit;
+      background: linear-gradient(120deg, rgba(0,119,200,0.50), rgba(0,139,211,0.45), rgba(0,166,81,0.35), rgba(0,119,200,0.50));
+      background-size: 300% 300%;
+      animation: shine 8s linear infinite;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+      pointer-events: none;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hover-lift {
+      transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 70px rgba(26, 26, 26, 0.10);
+    }
+
+    .skill-bar {
+      height: 10px;
+      background: rgba(226, 232, 240, 0.9);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+    .skill-bar > span {
+      display: block;
+      height: 100%;
+      width: 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #0077C8, #008BD3, #00A651);
+      background-size: 200% 200%;
+      animation: shine 6s linear infinite;
+      transition: width 1.4s cubic-bezier(.2,.9,.2,1);
+    }
+
+    canvas#bgCanvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      opacity: 0.85;
+    }
+
+    .type-cursor {
+      display: inline-block;
+      width: 0.75ch;
+      margin-left: 0.1ch;
+      color: #0077C8;
+      animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .section-kicker {
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .logo-chip {
+      border: 1px solid rgba(148,163,184,0.18);
+      background: rgba(255,255,255,0.72);
+      box-shadow: 0 10px 30px rgba(26, 26, 26, 0.04);
+    }
+
+    .stat-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(248,250,252,0.92));
+      border: 1px solid rgba(148,163,184,0.16);
+    }
+
+    .blog-card:hover .blog-arrow {
+      transform: translateX(4px);
+    }
+
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 1.5px;
+      background: linear-gradient(90deg, #0077C8, #008BD3);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.28s ease;
+    }
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }
+  </style>
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "張富傑",
+    "jobTitle": ["AI 顧問", "資料科學家", "生成式 AI 講師", "數位轉型顧問", "保險與財務規劃顧問"],
+    "description": "臺灣行銷研究有限公司創辦人，以 AI、資料科學與商業策略協助企業建立競爭優勢。",
+    "url": "https://calendar.app.google/n27ug3YwWKoegnSQ8",
+    "sameAs": [
+      "https://calendar.app.google/n27ug3YwWKoegnSQ8"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "臺灣行銷研究有限公司"
+    }
+  }
+  </script>
+</head>
+
+<body class="antialiased selection:bg-blue-100 selection:text-slate-900">
+  <!-- NAVBAR -->
+  <header id="topbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="glass-nav">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-18 items-center justify-between py-3">
+          <a href="#home" class="group flex items-center gap-3">
+            <div class="h-11 w-11 rounded-2xl bg-gradient-to-br from-blue-600 via-violet-600 to-emerald-500 p-[1px] shadow-soft">
+              <div class="flex h-full w-full items-center justify-center rounded-2xl bg-white">
+                <span class="text-sm font-bold text-slate-900">JF</span>
+              </div>
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-slate-900">張富傑</div>
+              <div class="text-xs text-slate-500">AI × Data × Strategy</div>
+            </div>
+          </a>
+
+          <nav class="hidden items-center gap-8 lg:flex">
+            <a class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900 active" href="#home">首頁</a>
+            <a class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900" href="#about">關於我</a>
+            <a class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900" href="#services">專業服務</a>
+            <a class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900" href="#cases">成功案例</a>
+            <a class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900" href="#clients">合作客戶</a>
+            <a class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900" href="#articles">技術文章</a>
+            <a class="nav-link text-sm font-medium text-slate-700 hover:text-slate-900" href="#contact">聯絡我</a>
+          </nav>
+
+          <div class="hidden lg:flex">
+            <a href="https://calendar.app.google/n27ug3YwWKoegnSQ8" target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-slate-800">
+              立即預約
+            </a>
+          </div>
+
+          <button id="menuBtn" class="lg:hidden inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white/80 px-3 py-2 text-slate-700 shadow-sm transition hover:bg-white" aria-label="開啟選單">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+              <path d="M4 7h16M4 12h16M4 17h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden pb-4 lg:hidden">
+          <div class="grid gap-2 rounded-3xl border border-slate-200 bg-white/90 p-3 shadow-soft">
+            <a class="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50" href="#home">首頁</a>
+            <a class="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50" href="#about">關於我</a>
+            <a class="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50" href="#services">專業服務</a>
+            <a class="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50" href="#cases">成功案例</a>
+            <a class="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50" href="#clients">合作客戶</a>
+            <a class="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50" href="#articles">技術文章</a>
+            <a class="rounded-2xl px-4 py-3 text-sm font-medium text-slate-700 hover:bg-slate-50" href="#contact">聯絡我</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative pt-24">
+    <!-- HERO -->
+    <section id="home" class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10 bg-hero-grad"></div>
+      <div class="absolute inset-0 -z-10 opacity-70">
+        <canvas id="bgCanvas"></canvas>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid items-center gap-16 py-16 lg:grid-cols-12 lg:py-24">
+          <div class="relative z-10 lg:col-span-7">
+            <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-200 bg-white/80 px-4 py-2 text-sm text-slate-700 shadow-sm backdrop-blur">
+              <span class="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Helping Businesses Transform Data Into Decisions.
+            </div>
+
+            <p class="section-kicker mb-4 text-sm font-semibold text-blue-600 reveal">AI 顧問｜資料科學家｜生成式 AI 講師</p>
+
+            <h1 class="max-w-4xl text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
+              <span id="typingText"></span><span class="type-cursor">|</span>
+            </h1>
+
+            <p class="mt-8 max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl">
+              讓 AI、資料科學與商業智慧成為企業決策的共同語言。
+              透過超過 8 年的實務經驗，協助企業完成數位轉型、導入生成式 AI、
+              建立數據驅動文化，創造可衡量的商業成果。
+            </p>
+
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+              <a href="https://calendar.app.google/n27ug3YwWKoegnSQ8" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center rounded-full bg-slate-900 px-7 py-4 text-base font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-glow">
+                立即預約顧問諮詢
+                <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <path d="M5 12h14M13 5l7 7-7 7"></path>
+                </svg>
+              </a>
+              <a href="#cases"
+                 class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/85 px-7 py-4 text-base font-semibold text-slate-800 shadow-sm transition hover:-translate-y-0.5 hover:border-blue-200 hover:bg-white">
+                查看成功案例
+              </a>
+            </div>
+
+            <div class="mt-12 grid gap-4 sm:grid-cols-3">
+              <div class="stat-card rounded-3xl p-5 shadow-sm reveal">
+                <div class="text-3xl font-semibold text-slate-950"><span class="counter" data-target="8">0</span>+</div>
+                <div class="mt-1 text-sm text-slate-500">Years Experience</div>
+              </div>
+              <div class="stat-card rounded-3xl p-5 shadow-sm reveal">
+                <div class="text-3xl font-semibold text-slate-950"><span class="counter" data-target="100">0</span>+</div>
+                <div class="mt-1 text-sm text-slate-500">Enterprise Projects</div>
+              </div>
+              <div class="stat-card rounded-3xl p-5 shadow-sm reveal">
+                <div class="text-3xl font-semibold text-slate-950"><span class="counter" data-target="5000">0</span>+</div>
+                <div class="mt-1 text-sm text-slate-500">Students Trained</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative lg:col-span-5">
+            <div class="relative mx-auto max-w-xl">
+              <div class="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-blue-200/70 via-white/0 to-violet-200/70 blur-3xl animate-pulseGlow"></div>
+              <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 p-6 shadow-soft backdrop-blur-xl gradient-border">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-sm font-semibold text-slate-900">AI Strategy Dashboard</div>
+                    <div class="text-xs text-slate-500">Premium SaaS style experience</div>
+                  </div>
+                  <div class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-600">Live</div>
+                </div>
+
+                <div class="mt-6 grid gap-4">
+                  <div class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+                    <div class="flex items-center justify-between">
+                      <div class="text-sm font-semibold text-slate-900">Data-to-Decision Pipeline</div>
+                      <span class="rounded-full bg-blue-50 px-2.5 py-1 text-xs font-medium text-blue-600">Automated</span>
+                    </div>
+                    <div class="mt-4 space-y-3">
+                      <div>
+                        <div class="mb-1 flex justify-between text-xs text-slate-500"><span>Data Collection</span><span>96%</span></div>
+                        <div class="skill-bar"><span style="width:96%"></span></div>
+                      </div>
+                      <div>
+                        <div class="mb-1 flex justify-between text-xs text-slate-500"><span>Insight Generation</span><span>92%</span></div>
+                        <div class="skill-bar"><span style="width:92%"></span></div>
+                      </div>
+                      <div>
+                        <div class="mb-1 flex justify-between text-xs text-slate-500"><span>Decision Support</span><span>98%</span></div>
+                        <div class="skill-bar"><span style="width:98%"></span></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <div class="text-xs text-slate-500">Business Impact</div>
+                      <div class="mt-2 text-2xl font-semibold text-slate-950">↑ ROI</div>
+                      <div class="mt-1 text-sm text-slate-600">以策略驅動成果</div>
+                    </div>
+                    <div class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
+                      <div class="text-xs text-slate-500">AI Adoption</div>
+                      <div class="mt-2 text-2xl font-semibold text-slate-950">Fast Track</div>
+                      <div class="mt-1 text-sm text-slate-600">從概念走向落地</div>
+                    </div>
+                  </div>
+
+                  <div class="rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-900 to-slate-800 p-5 text-white shadow-soft">
+                    <div class="text-xs uppercase tracking-[0.2em] text-slate-300">Core Positioning</div>
+                    <div class="mt-2 text-lg font-semibold">Helping Businesses Transform Data Into Decisions.</div>
+                    <p class="mt-2 text-sm leading-6 text-slate-300">
+                      以 AI、資料科學與商業策略，協助企業建立競爭優勢。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST LOGOS -->
+    <section id="clients" class="py-8 sm:py-12">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="reveal">
+          <div class="mb-8 text-center">
+            <p class="section-kicker text-sm font-semibold text-slate-500">Trusted By</p>
+            <h2 class="mt-3 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">權威背書與合作客戶</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-7">
+            <div class="logo-chip flex items-center justify-center rounded-2xl px-4 py-5 text-center text-sm font-semibold text-slate-700">中華電信</div>
+            <div class="logo-chip flex items-center justify-center rounded-2xl px-4 py-5 text-center text-sm font-semibold text-slate-700">長榮航空</div>
+            <div class="logo-chip flex items-center justify-center rounded-2xl px-4 py-5 text-center text-sm font-semibold text-slate-700">工研院</div>
+            <div class="logo-chip flex items-center justify-center rounded-2xl px-4 py-5 text-center text-sm font-semibold text-slate-700">資策會</div>
+            <div class="logo-chip flex items-center justify-center rounded-2xl px-4 py-5 text-center text-sm font-semibold text-slate-700">證券暨期貨市場發展基金會</div>
+            <div class="logo-chip flex items-center justify-center rounded-2xl px-4 py-5 text-center text-sm font-semibold text-slate-700">金融機構</div>
+            <div class="logo-chip flex items-center justify-center rounded-2xl px-4 py-5 text-center text-sm font-semibold text-slate-700">大專院校</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-start">
+          <div class="lg:col-span-4 reveal">
+            <p class="section-kicker text-sm font-semibold text-blue-600">About Me</p>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">品牌故事</h2>
+            <p class="mt-5 text-slate-600 leading-8">
+              從資料洞察到商業決策，從技術導入到組織轉型，我的角色不只是顧問，更是企業邁向智慧化的策略夥伴。
+            </p>
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="space-y-6">
+              <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 class="text-xl font-semibold text-slate-950">品牌故事</h3>
+                  <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600">Brand Narrative</span>
+                </div>
+                <p class="mt-4 text-slate-600 leading-8">
+                  我是張富傑，臺灣行銷研究有限公司創辦人，長期專注於 AI、資料科學與數位行銷的交會點。
+                  我相信真正有價值的技術，不只是模型與演算法，而是能夠被企業理解、採用並轉化為成果的決策能力。
+                  透過超過 8 年的實務經驗，我持續協助組織建立數據驅動文化，讓每一次投入都更接近成長。
+                </p>
+              </article>
+
+              <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 class="text-xl font-semibold text-slate-950">專業經歷</h3>
+                  <span class="rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-600">Experience</span>
+                </div>
+
+                <div class="mt-6 space-y-5">
+                  <div class="timeline-item relative pl-8">
+                    <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full bg-blue-600 shadow-[0_0_0_6px_rgba(0,119,200,0.12)]"></span>
+                    <div class="text-sm font-semibold text-slate-950">臺灣行銷研究有限公司創辦人</div>
+                    <div class="mt-1 text-sm leading-7 text-slate-600">以 AI、資料科學與商業策略協助企業完成數位轉型、提升營運效率並建立決策優勢。</div>
+                  </div>
+                  <div class="timeline-item relative pl-8">
+                    <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full bg-violet-600 shadow-[0_0_0_6px_rgba(0,139,211,0.12)]"></span>
+                    <div class="text-sm font-semibold text-slate-950">企業顧問與專案主持</div>
+                    <div class="mt-1 text-sm leading-7 text-slate-600">橫跨金融、製造、醫療、教育、廣告與文教等產業，推動數據分析與 AI 落地應用。</div>
+                  </div>
+                  <div class="timeline-item relative pl-8">
+                    <span class="absolute left-0 top-1.5 h-4 w-4 rounded-full bg-emerald-500 shadow-[0_0_0_6px_rgba(0,166,81,0.12)]"></span>
+                    <div class="text-sm font-semibold text-slate-950">策略型數位轉型推動者</div>
+                    <div class="mt-1 text-sm leading-7 text-slate-600">聚焦從資料蒐集、分析、模型建立到決策支持的完整流程，將技術轉化為可衡量價值。</div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 class="text-xl font-semibold text-slate-950">教學與演講經驗</h3>
+                  <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-600">Teaching</span>
+                </div>
+                <p class="mt-4 text-slate-600 leading-8">
+                  曾受邀為中華電信、長榮航空、資策會、工研院、證券暨期貨市場發展基金會及多家金融機構授課，
+                  主題涵蓋資料科學、人工智慧、商業分析與數據應用。
+                  同時也在國立臺灣科技大學、創新育成中心、臺北市立大學等單位授課，並曾以全英文教授市場分析與行銷策略。
+                </p>
+              </article>
+
+              <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft">
+                <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <h3 class="text-xl font-semibold text-slate-950">技術專長</h3>
+                  <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">Stack</span>
+                </div>
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span class="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">Python</span>
+                  <span class="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">LLM</span>
+                  <span class="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">GCP</span>
+                  <span class="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">Machine Learning</span>
+                  <span class="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">Business Intelligence</span>
+                  <span class="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-700">Generative AI</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-16 reveal">
+          <div class="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft lg:p-10">
+            <div class="mb-8 flex items-center justify-between gap-4">
+              <div>
+                <p class="section-kicker text-sm font-semibold text-blue-600">Timeline UI</p>
+                <h3 class="mt-3 text-2xl font-semibold text-slate-950">專業軌跡</h3>
+              </div>
+              <div class="hidden sm:block text-sm text-slate-500">從技術到策略，逐步累積跨產業影響力</div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute left-3 top-0 h-full w-px bg-gradient-to-b from-blue-200 via-violet-200 to-emerald-200"></div>
+              <div class="space-y-8">
+                <div class="relative pl-12">
+                  <div class="absolute left-0 top-1.5 h-6 w-6 rounded-full bg-blue-600 ring-8 ring-blue-50"></div>
+                  <div class="text-sm font-semibold text-blue-600">01｜企業顧問階段</div>
+                  <div class="mt-1 text-slate-900 font-medium">將資料分析與 AI 能力導入企業營運場景，建立可執行的決策流程。</div>
+                </div>
+                <div class="relative pl-12">
+                  <div class="absolute left-0 top-1.5 h-6 w-6 rounded-full bg-violet-600 ring-8 ring-violet-50"></div>
+                  <div class="text-sm font-semibold text-violet-600">02｜教學擴散階段</div>
+                  <div class="mt-1 text-slate-900 font-medium">以企業授課與學術教學的方式，推動 AI 素養與資料思維普及化。</div>
+                </div>
+                <div class="relative pl-12">
+                  <div class="absolute left-0 top-1.5 h-6 w-6 rounded-full bg-emerald-500 ring-8 ring-emerald-50"></div>
+                  <div class="text-sm font-semibold text-emerald-600">03｜策略整合階段</div>
+                  <div class="mt-1 text-slate-900 font-medium">整合生成式 AI、商業智慧與數位轉型，協助組織建立持續成長動能。</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 grid gap-4 md:grid-cols-3">
+              <div class="rounded-3xl bg-slate-50 p-5">
+                <div class="text-sm font-semibold text-slate-900">核心理念</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">技術的價值不在於複雜，而在於能否讓企業更快做出更好的決策。</p>
+              </div>
+              <div class="rounded-3xl bg-slate-50 p-5">
+                <div class="text-sm font-semibold text-slate-900">服務心法</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">以清楚、可落地、可衡量為原則，讓方案真正被使用與持續優化。</p>
+              </div>
+              <div class="rounded-3xl bg-slate-50 p-5">
+                <div class="text-sm font-semibold text-slate-900">長期目標</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">推動 AI 與資料科學普及化，協助企業在變動中持續保持前瞻與競爭力。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center reveal">
+          <p class="section-kicker text-sm font-semibold text-blue-600">Premium Service</p>
+          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">專業服務</h2>
+          <p class="mx-auto mt-4 max-w-3xl text-slate-600 leading-8">
+            以顧問思維、技術實作與商業成果為核心，提供從策略、建置到培訓的一站式專業服務。
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <!-- Card template repeated -->
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold">AI</div>
+                <span class="text-xs font-semibold text-slate-500">Consulting</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">AI 顧問服務</h3>
+              <p class="mt-3 text-slate-600 leading-7">從需求盤點、可行性評估到導入路線圖，協助企業找出最適合的 AI 應用切入點。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-violet-50 text-violet-600 flex items-center justify-center font-bold">ST</div>
+                <span class="text-xs font-semibold text-slate-500">Strategy</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">AI 導入策略</h3>
+              <p class="mt-3 text-slate-600 leading-7">協助建立分階段導入計畫，將 AI 與企業流程、組織能力及 KPI 有效對齊。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">GC</div>
+                <span class="text-xs font-semibold text-slate-500">GenAI</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">生成式 AI 應用</h3>
+              <p class="mt-3 text-slate-600 leading-7">規劃能真正提升效率的生成式 AI 方案，包含內容生產、知識管理與流程自動化。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold">LL</div>
+                <span class="text-xs font-semibold text-slate-500">LLM</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">LLM 解決方案</h3>
+              <p class="mt-3 text-slate-600 leading-7">設計企業級語言模型應用架構，涵蓋知識問答、內部助理與文件理解工作流。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold">PE</div>
+                <span class="text-xs font-semibold text-slate-500">Prompt</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">Prompt Engineering</h3>
+              <p class="mt-3 text-slate-600 leading-7">建立可重複、可控管的提示設計方法，提升 AI 回應品質與業務一致性。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold">DS</div>
+                <span class="text-xs font-semibold text-slate-500">Data</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">資料科學服務</h3>
+              <p class="mt-3 text-slate-600 leading-7">從資料清理、特徵工程到模型建置，打造能支援商業判斷的分析系統。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold">Py</div>
+                <span class="text-xs font-semibold text-slate-500">Development</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">Python 開發</h3>
+              <p class="mt-3 text-slate-600 leading-7">開發自動化腳本、分析工具與資料處理流程，提升團隊效率與可維護性。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-violet-50 text-violet-600 flex items-center justify-center font-bold">ML</div>
+                <span class="text-xs font-semibold text-slate-500">Modeling</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">機器學習</h3>
+              <p class="mt-3 text-slate-600 leading-7">建構預測、分類與推薦模型，讓資料真正參與營運與成長決策。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">BI</div>
+                <span class="text-xs font-semibold text-slate-500">Analysis</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">商業分析</h3>
+              <p class="mt-3 text-slate-600 leading-7">透過儀表板與指標系統，建立從營運到管理層一致的洞察視角。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center font-bold">PM</div>
+                <span class="text-xs font-semibold text-slate-500">Forecast</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">預測模型</h3>
+              <p class="mt-3 text-slate-600 leading-7">協助企業預測需求、風險與成效，支持更精準的資源配置與規劃。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold">TR</div>
+                <span class="text-xs font-semibold text-slate-500">Training</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">企業培訓服務</h3>
+              <p class="mt-3 text-slate-600 leading-7">以企業實務為核心，設計可立即落地的課程與工作坊，讓團隊快速建立能力。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold">IV</div>
+                <span class="text-xs font-semibold text-slate-500">Insurance</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">保險與財務規劃</h3>
+              <p class="mt-3 text-slate-600 leading-7">依人生階段、家庭責任與財務目標，提供客製化保險與退休規劃建議。</p>
+            </div>
+          </div>
+
+          <div class="gradient-border reveal hover-lift rounded-[2rem] bg-white p-[1px] shadow-soft">
+            <div class="rounded-[2rem] bg-white p-7">
+              <div class="flex items-center justify-between">
+                <div class="h-12 w-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold">DX</div>
+                <span class="text-xs font-semibold text-slate-500">Transformation</span>
+              </div>
+              <h3 class="mt-5 text-xl font-semibold text-slate-950">數位轉型</h3>
+              <p class="mt-3 text-slate-600 leading-7">協助企業建立從流程優化、資料治理到智能決策的整體轉型路徑。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 reveal rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft">
+          <h3 class="text-xl font-semibold text-slate-950">保險服務項目</h3>
+          <p class="mt-4 text-slate-600 leading-8">
+            保險的價值不僅在於風險發生時的保障，更在於事前做好完善規劃，為自己與家人的未來建立穩固的安全基礎。
+            我致力於提供專業且客製化的保險規劃服務，依據每位客戶不同的人生階段、家庭責任及財務目標，量身打造最適合的保障方案。
+          </p>
+          <p class="mt-4 text-slate-600 leading-8">
+            服務範圍涵蓋人壽保險、健康保險、傷害保險及財產保險等多元保險商品，協助客戶建構完整的風險防護網。
+            無論是家庭經濟支柱的責任保障、醫療支出風險管理、意外事故保障，或是資產與財產保護需求，都能透過專業分析與規劃，
+            找到兼顧保障與預算的最佳配置。
+          </p>
+          <p class="mt-4 text-slate-600 leading-8">
+            此外，我也提供家庭整體保障配置與退休規劃服務，從家庭成員需求盤點、保單健診、保障缺口分析，到退休後現金流規劃，
+            協助客戶建立長期且穩健的財務安全機制。透過系統化的規劃方式，讓保障不再只是購買保單，而是真正成為守護家庭與實現人生目標的重要基石。
+          </p>
+          <p class="mt-4 text-slate-600 leading-8">
+            我相信，好的保險規劃應該簡單透明、符合需求且與人生同步成長，讓每一位客戶都能安心面對未來，專注於追求更美好的生活。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTERS -->
+    <section class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-soft lg:p-12">
+          <div class="mb-8 text-center reveal">
+            <p class="section-kicker text-sm font-semibold text-blue-600">Results</p>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">數據成就區塊</h2>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+            <div class="stat-card reveal rounded-[2rem] p-7 text-center">
+              <div class="text-4xl font-semibold text-slate-950"><span class="counter" data-target="8">0</span>+</div>
+              <div class="mt-2 text-sm text-slate-500">Years Experience</div>
+            </div>
+            <div class="stat-card reveal rounded-[2rem] p-7 text-center">
+              <div class="text-4xl font-semibold text-slate-950"><span class="counter" data-target="100">0</span>+</div>
+              <div class="mt-2 text-sm text-slate-500">Enterprise Projects</div>
+            </div>
+            <div class="stat-card reveal rounded-[2rem] p-7 text-center">
+              <div class="text-4xl font-semibold text-slate-950"><span class="counter" data-target="5000">0</span>+</div>
+              <div class="mt-2 text-sm text-slate-500">Students Trained</div>
+            </div>
+            <div class="stat-card reveal rounded-[2rem] p-7 text-center">
+              <div class="text-4xl font-semibold text-slate-950"><span class="counter" data-target="20">0</span>+</div>
+              <div class="mt-2 text-sm text-slate-500">Industries Served</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases" class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center reveal">
+          <p class="section-kicker text-sm font-semibold text-blue-600">Case Studies</p>
+          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">成功案例區塊</h2>
+          <p class="mx-auto mt-4 max-w-3xl text-slate-600 leading-8">
+            以問題、解法、成果三層結構呈現，讓訪客快速理解你的專業價值與實際影響。
+          </p>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft hover-lift">
+            <div class="flex items-center justify-between">
+              <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600">金融業</span>
+              <span class="text-xs font-medium text-slate-500">Problem → Solution → Result</span>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-slate-950">風險資料整合與預警決策</h3>
+            <div class="mt-5 grid gap-4 sm:grid-cols-3">
+              <div>
+                <div class="text-sm font-semibold text-slate-900">問題</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">資料分散於不同系統，難以快速掌握關鍵風險與業務趨勢。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">解決方案</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">建立統一分析架構與視覺化儀表板，搭配模型化風險提示。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">成果</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">縮短決策時間，提升管理層對風險訊號的即時掌握能力。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft hover-lift">
+            <div class="flex items-center justify-between">
+              <span class="rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-600">製造業</span>
+              <span class="text-xs font-medium text-slate-500">Problem → Solution → Result</span>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-slate-950">生產資料分析與品質優化</h3>
+            <div class="mt-5 grid gap-4 sm:grid-cols-3">
+              <div>
+                <div class="text-sm font-semibold text-slate-900">問題</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">品質波動難以追蹤，造成改善方向不明確。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">解決方案</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">導入資料清理、異常偵測與流程分析，找出關鍵因子。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">成果</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">建立可持續優化的品質管理模式，提升團隊分析效率。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft hover-lift">
+            <div class="flex items-center justify-between">
+              <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-600">教育產業</span>
+              <span class="text-xs font-medium text-slate-500">Problem → Solution → Result</span>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-slate-950">AI 課程設計與人才培育</h3>
+            <div class="mt-5 grid gap-4 sm:grid-cols-3">
+              <div>
+                <div class="text-sm font-semibold text-slate-900">問題</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">學員具備基礎工具使用能力，但缺少商業應用脈絡。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">解決方案</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">設計企業情境式課程，從案例推演到實作演練完整串接。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">成果</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">提升學員對 AI 應用與資料思維的理解深度與落地能力。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft hover-lift">
+            <div class="flex items-center justify-between">
+              <span class="rounded-full bg-sky-50 px-3 py-1 text-xs font-semibold text-sky-600">醫療產業</span>
+              <span class="text-xs font-medium text-slate-500">Problem → Solution → Result</span>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-slate-950">醫療資訊洞察與管理決策支持</h3>
+            <div class="mt-5 grid gap-4 sm:grid-cols-3">
+              <div>
+                <div class="text-sm font-semibold text-slate-900">問題</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">管理資訊分散，難以在有限時間內掌握重點指標。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">解決方案</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">以 BI 與資料模型建立管理層視角，聚焦診療與營運數據。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">成果</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">讓決策更即時、更聚焦，並提升跨部門溝通效率。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass-card reveal rounded-[2rem] p-7 shadow-soft hover-lift lg:col-span-2">
+            <div class="flex items-center justify-between">
+              <span class="rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-600">數位行銷</span>
+              <span class="text-xs font-medium text-slate-500">Problem → Solution → Result</span>
+            </div>
+            <h3 class="mt-5 text-2xl font-semibold text-slate-950">廣告與內容資料整合優化</h3>
+            <div class="mt-5 grid gap-4 md:grid-cols-3">
+              <div>
+                <div class="text-sm font-semibold text-slate-900">問題</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">行銷活動表現分散，缺少統一評估與優化依據。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">解決方案</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">建立活動追蹤、受眾分析與成效歸因的分析框架。</p>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">成果</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">提高行銷策略透明度，強化資源配置與投放決策品質。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center reveal">
+          <p class="section-kicker text-sm font-semibold text-blue-600">Capabilities</p>
+          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">技術專長區塊</h2>
+          <p class="mx-auto mt-4 max-w-3xl text-slate-600 leading-8">
+            採用科技感技能矩陣與動畫進度效果，呈現你的技術深度與應用廣度。
+          </p>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-12">
+          <div class="lg:col-span-5 reveal rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft">
+            <h3 class="text-xl font-semibold text-slate-950">技能矩陣</h3>
+            <p class="mt-3 text-slate-600 leading-7">
+              專注於能夠驅動決策、提升效率與增強競爭優勢的技術組合。
+            </p>
+
+            <div class="mt-6 space-y-5">
+              <div data-width="96">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">Python</span><span class="text-slate-500">96%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div data-width="94">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">Machine Learning</span><span class="text-slate-500">94%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div data-width="93">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">LLM</span><span class="text-slate-500">93%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div data-width="92">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">OpenAI</span><span class="text-slate-500">92%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div data-width="91">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">GCP</span><span class="text-slate-500">91%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div data-width="95">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">Data Science</span><span class="text-slate-500">95%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div data-width="90">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">Business Intelligence</span><span class="text-slate-500">90%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div data-width="94">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">Generative AI</span><span class="text-slate-500">94%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+              <div data-width="89">
+                <div class="mb-2 flex justify-between text-sm">
+                  <span class="font-medium text-slate-800">Prompt Engineering</span><span class="text-slate-500">89%</span>
+                </div>
+                <div class="skill-bar"><span></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 reveal rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white to-slate-50 p-7 shadow-soft">
+            <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <p class="section-kicker text-sm font-semibold text-blue-600">Tech Matrix</p>
+                <h3 class="mt-2 text-2xl font-semibold text-slate-950">技術專長區塊</h3>
+              </div>
+              <div class="text-sm text-slate-500">Animation-driven proficiency display</div>
+            </div>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">Python</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">資料處理、自動化、應用開發</p>
+              </div>
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">Machine Learning</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">分類、預測、推薦與異常偵測</p>
+              </div>
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">LLM</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">企業知識問答與工作流整合</p>
+              </div>
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">OpenAI</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">生成式 AI 應用設計與導入</p>
+              </div>
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">GCP</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">雲端資料處理與部署流程</p>
+              </div>
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">Data Science</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">洞察提煉與決策支持</p>
+              </div>
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">Business Intelligence</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">儀表板、指標設計與管理分析</p>
+              </div>
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">Generative AI</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">內容生成、知識管理與自動化</p>
+              </div>
+              <div class="rounded-3xl bg-white p-5 shadow-sm border border-slate-100">
+                <div class="text-sm font-semibold text-slate-900">Prompt Engineering</div>
+                <p class="mt-2 text-sm leading-7 text-slate-600">高品質輸出與流程控管設計</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="articles" class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center reveal">
+          <p class="section-kicker text-sm font-semibold text-blue-600">Insights</p>
+          <h2 class="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">技術文章區塊</h2>
+          <p class="mx-auto mt-4 max-w-3xl text-slate-600 leading-8">
+            以部落格卡片呈現 AI、資料科學、商業策略與數位轉型洞察，持續建立權威與信任。
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <article class="blog-card reveal hover-lift rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft">
+            <div class="aspect-[16/10] rounded-2xl bg-gradient-to-br from-blue-100 via-white to-violet-100"></div>
+            <div class="mt-5">
+              <span class="rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-600">AI</span>
+              <h3 class="mt-4 text-lg font-semibold text-slate-950">企業如何建立可落地的 AI 導入框架</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">從需求、流程與治理三層面，建立適合企業的導入節奏。</p>
+            </div>
+            <div class="blog-arrow mt-5 inline-flex items-center text-sm font-semibold text-slate-900 transition-transform">
+              閱讀文章
+              <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M5 12h14M13 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </article>
+
+          <article class="blog-card reveal hover-lift rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft">
+            <div class="aspect-[16/10] rounded-2xl bg-gradient-to-br from-violet-100 via-white to-sky-100"></div>
+            <div class="mt-5">
+              <span class="rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-600">Data Science</span>
+              <h3 class="mt-4 text-lg font-semibold text-slate-950">資料科學如何支持經營決策</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">把分析結果轉成管理者看得懂、用得上的決策語言。</p>
+            </div>
+            <div class="blog-arrow mt-5 inline-flex items-center text-sm font-semibold text-slate-900 transition-transform">
+              閱讀文章
+              <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M5 12h14M13 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </article>
+
+          <article class="blog-card reveal hover-lift rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft">
+            <div class="aspect-[16/10] rounded-2xl bg-gradient-to-br from-emerald-100 via-white to-blue-100"></div>
+            <div class="mt-5">
+              <span class="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-600">Business Strategy</span>
+              <h3 class="mt-4 text-lg font-semibold text-slate-950">如何把 AI 變成真正的商業優勢</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">策略、流程、人才與指標，缺一不可。</p>
+            </div>
+            <div class="blog-arrow mt-5 inline-flex items-center text-sm font-semibold text-slate-900 transition-transform">
+              閱讀文章
+              <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M5 12h14M13 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </article>
+
+          <article class="blog-card reveal hover-lift rounded-[2rem] border border-slate-200 bg-white p-5 shadow-soft">
+            <div class="aspect-[16/10] rounded-2xl bg-gradient-to-br from-slate-100 via-white to-blue-100"></div>
+            <div class="mt-5">
+              <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">Digital Transformation</span>
+              <h3 class="mt-4 text-lg font-semibold text-slate-950">數位轉型的第一步：先讓資料可用</h3>
+              <p class="mt-3 text-sm leading-7 text-slate-600">從資料治理與流程整合開始，建立穩固基礎。</p>
+            </div>
+            <div class="blog-arrow mt-5 inline-flex items-center text-sm font-semibold text-slate-900 transition-transform">
+              閱讀文章
+              <svg class="ml-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <path d="M5 12h14M13 5l7 7-7 7"></path>
+              </svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section id="solutions" class="py-12 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 text-center reveal">
+          <p class="section-kicker text-sm font-semibold text-blue-600">核心產品與技術解決方案</p>
+          <h2 class="mt-3 text-2xl font-semibold tracking-tight text-slate-950 sm:text-3xl">我們的產品與技術</h2>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-3">
+          <a href="https://courses.taiwanmds.com/product/information?p=02c0c7b9ec7b11f0b3480242ac110002" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-glow transition hover:-translate-y-1">
+            <div class="flex items-start gap-4">
+              <div class="h-12 w-12 flex items-center justify-center rounded-full bg-blue-50 text-blue-600 text-xl">
+                <i class="fa-solid fa-cat"></i>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">Vibe Coding：行銷數據分析學習圈</div>
+                <div class="mt-1 text-sm text-slate-600">訂閱Vibe Coding行銷數據分析學習圈，跟著我們一同走入行銷數據分析與vibe coding自動化的世界</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://judgai.com/" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-glow transition hover:-translate-y-1">
+            <div class="flex items-start gap-4">
+              <div class="h-12 w-12 flex items-center justify-center rounded-full bg-emerald-50 text-emerald-600 text-xl">
+                <i class="fa-solid fa-cat"></i>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">保險機器人：當經驗成為奇點，AI更是保險未來的引擎</div>
+                <div class="mt-1 text-sm text-slate-600">從經驗、法條到正確說明，奇點讓每位保險專業者擁有一位懂法的科技夥伴。</div>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://judgai.com/saymind" target="_blank" rel="noopener noreferrer" class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-glow transition hover:-translate-y-1">
+            <div class="flex items-start gap-4">
+              <div class="h-12 w-12 flex items-center justify-center rounded-full bg-violet-50 text-violet-600 text-xl">
+                <i class="fa-solid fa-cat"></i>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-slate-900">SayMind：一站式語音轉錄，AI 筆記整理，自動口條訓練</div>
+                <div class="mt-1 text-sm text-slate-600">使用 LangChain 搭建的 RAG 系統，可上傳 PDF 並進行精準問答。</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 sm:py-28">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid gap-8 lg:grid-cols-12">
+          <div class="lg:col-span-5 reveal">
+            <p class="section-kicker text-sm font-semibold text-blue-600">Contact</p>
+            <h2 class="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">聯絡我</h2>
+            <p class="mt-5 text-slate-600 leading-8">
+              若你正在尋找 AI 導入、資料科學、企業培訓、數位轉型或保險與財務規劃的專業顧問，
+              歡迎與我聯繫，一起把策略變成成果。
+            </p>
+
+            <a href="https://calendar.app.google/n27ug3YwWKoegnSQ8" target="_blank" rel="noopener noreferrer"
+               class="mt-8 inline-flex items-center justify-center rounded-full bg-slate-900 px-7 py-4 text-base font-semibold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-slate-800 hover:shadow-glow">
+              立即預約顧問諮詢
+            </a>
+
+            <div class="mt-8 space-y-4">
+              <div class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16v16H4z"></path><path d="m4 7 8 5 8-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm font-semibold text-slate-900">Email</div>
+                  <div class="text-sm text-slate-600">hello@tmr-ai.com</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-violet-50 text-violet-600">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 0-8.485 0l-.515.515"></path><path d="M8 16a6 6 0 0 0 8.485 0l.515-.515"></path><path d="M8 12h8"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm font-semibold text-slate-900">LinkedIn</div>
+                  <div class="text-sm text-slate-600">linkedin.com/in/zhangfujie</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-100 text-slate-700">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor">
+                    <path d="M12.04 2C6.51 2 2 6.02 2 10.98c0 2.67 1.32 5.1 3.5 6.74l-.86 3.15a.75.75 0 0 0 .95.92l3.65-1.23c.88.24 1.8.37 2.8.37 5.53 0 10.04-4.02 10.04-8.98S17.57 2 12.04 2zm1.8 11.44-2.2-1.06-1.4 1.6c-.13.16-.35.22-.53.15-1.55-.63-2.96-1.85-4.27-3.74-.1-.15-.1-.35.01-.49l1.25-1.52c.13-.16.15-.38.05-.56L6.13 5.72c-.12-.22-.39-.31-.62-.21l-1.3.57c-.25.11-.42.36-.42.64 0 .2.02.41.06.61.33 1.68 1.18 3.56 2.64 5.29 1.48 1.75 3.22 2.95 5.25 3.58.2.06.42.05.6-.05l1.39-.75c.21-.11.31-.36.24-.58l-.48-1.52c-.07-.22-.01-.46.16-.61l1.42-1.3c.16-.15.21-.38.13-.58l-.06-.15c-.09-.2-.31-.32-.53-.29l-1.78.25c-.18.03-.36-.02-.49-.14z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm font-semibold text-slate-900">Line</div>
+                  <div class="text-sm text-slate-600">@zhangfujie</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+                  <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor">
+                    <path d="M19.07 4.93A10 10 0 1 0 4.93 19.07A10 10 0 0 0 19.07 4.93ZM11 17.5V13H8.5L12 6.5V11h2.5L11 17.5Z"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-sm font-semibold text-slate-900">Facebook</div>
+                  <div class="text-sm text-slate-600">facebook.com/zhangfujie.ai</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 reveal">
+            <div class="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-soft lg:p-10">
+              <div class="mb-6">
+                <p class="section-kicker text-sm font-semibold text-blue-600">Inquiry</p>
+                <h3 class="mt-2 text-2xl font-semibold text-slate-950">想先快速了解合作方式？</h3>
+              </div>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-3xl bg-slate-50 p-5">
+                  <div class="text-sm font-semibold text-slate-900">AI 顧問</div>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">評估現況、規劃導入、建立專案方向。</p>
+                </div>
+                <div class="rounded-3xl bg-slate-50 p-5">
+                  <div class="text-sm font-semibold text-slate-900">企業培訓</div>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">打造內訓、工作坊與主管課程。</p>
+                </div>
+                <div class="rounded-3xl bg-slate-50 p-5">
+                  <div class="text-sm font-semibold text-slate-900">資料科學</div>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">從分析到模型，支持決策優化。</p>
+                </div>
+                <div class="rounded-3xl bg-slate-50 p-5">
+                  <div class="text-sm font-semibold text-slate-900">保險規劃</div>
+                  <p class="mt-2 text-sm leading-7 text-slate-600">家庭保障、退休規劃與風險管理。</p>
+                </div>
+              </div>
+
+              <div class="mt-8 rounded-[1.75rem] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-6 text-white">
+                <div class="text-sm uppercase tracking-[0.2em] text-slate-400">Ready to Start</div>
+                <div class="mt-2 text-2xl font-semibold">一起把數據變成決策，把想法變成成果。</div>
+                <p class="mt-3 max-w-2xl text-sm leading-7 text-slate-300">
+                  透過 AI、資料科學與商業策略，為企業打造更清晰的成長路徑。
+                </p>
+                <a href="https://calendar.app.google/n27ug3YwWKoegnSQ8" target="_blank" rel="noopener noreferrer"
+                   class="mt-6 inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5 hover:bg-slate-100">
+                  立即預約顧問諮詢
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white/70 py-8 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div>
+        <div class="font-semibold text-slate-950">張富傑｜臺灣行銷研究有限公司</div>
+        <div class="mt-1 text-sm text-slate-500">Helping Businesses Transform Data Into Decisions.</div>
+      </div>
+      <div class="text-sm text-slate-500">© 2026 All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    // =========================
+    // Mobile menu toggle
+    // =========================
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      mobileMenu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+    }
+
+    // =========================
+    // Typing animation
+    // =========================
+    const typingTarget = document.getElementById('typingText');
+    const typingText = 'Until Marketing Data Science Is Common Sense';
+    let charIndex = 0;
+    let deleting = false;
+
+    function typeLoop() {
+      if (!typingTarget) return;
+
+      if (!deleting) {
+        charIndex++;
+        typingTarget.textContent = typingText.slice(0, charIndex);
+        if (charIndex >= typingText.length) {
+          deleting = true;
+          setTimeout(typeLoop, 1800);
+          return;
+        }
+      } else {
+        charIndex--;
+        typingTarget.textContent = typingText.slice(0, charIndex);
+        if (charIndex <= 0) {
+          deleting = false;
+        }
+      }
+
+      const speed = deleting ? 30 : 50;
+      setTimeout(typeLoop, speed);
+    }
+    window.addEventListener('load', () => {
+      setTimeout(typeLoop, 350);
+    });
+
+    // =========================
+    // Scroll reveal
+    // =========================
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, idx) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          el.classList.add('show');
+          el.style.transitionDelay = (el.dataset.delay || 0) + 'ms';
+          revealObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach((el, i) => {
+      if (i % 4 === 0) el.dataset.delay = 0;
+      else if (i % 4 === 1) el.dataset.delay = 100;
+      else if (i % 4 === 2) el.dataset.delay = 180;
+      else el.dataset.delay = 260;
+      revealObserver.observe(el);
+    });
+
+    // =========================
+    // Counter animation
+    // =========================
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 1600;
+        const start = performance.now();
+
+        function tick(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(eased * target).toLocaleString('en-US');
+          if (progress < 1) requestAnimationFrame(tick);
+          else el.textContent = target.toLocaleString('en-US');
+        }
+        requestAnimationFrame(tick);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.45 });
+
+    counters.forEach(c => counterObserver.observe(c));
+
+    // =========================
+    // Animate skill bars when visible
+    // =========================
+    const skillSections = document.querySelectorAll('[data-width]');
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const container = entry.target;
+        const width = container.dataset.width + '%';
+        const bar = container.querySelector('.skill-bar > span');
+        if (bar) bar.style.width = width;
+        skillObserver.unobserve(container);
+      });
+    }, { threshold: 0.35 });
+
+    skillSections.forEach(s => skillObserver.observe(s));
+
+    // =========================
+    // Navbar glass effect on scroll
+    // =========================
+    const topbar = document.getElementById('topbar');
+    function updateNav() {
+      const scrolled = window.scrollY > 18;
+      if (topbar) {
+        topbar.classList.toggle('shadow-sm', scrolled);
+        topbar.querySelector('.glass-nav')?.classList.toggle('bg-white/78', scrolled);
+        topbar.querySelector('.glass-nav')?.classList.toggle('border-slate-200/60', scrolled);
+      }
+    }
+    window.addEventListener('scroll', updateNav);
+    updateNav();
+
+    // =========================
+    // Active nav link highlight
+    // =========================
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const navLinks = [...document.querySelectorAll('.nav-link[href^="#"]')];
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      });
+    }, { threshold: 0.45, rootMargin: '-20% 0px -55% 0px' });
+    sections.forEach(section => navObserver.observe(section));
+
+    // =========================
+    // Background animation: floating particles & data flows
+    // =========================
+    const canvas = document.getElementById('bgCanvas');
+    const ctx = canvas?.getContext('2d');
+    let W = 0, H = 0, particles = [];
+
+    function resizeCanvas() {
+      if (!canvas || !ctx) return;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const rect = canvas.getBoundingClientRect();
+      W = rect.width;
+      H = rect.height;
+      canvas.width = Math.floor(W * dpr);
+      canvas.height = Math.floor(H * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      const count = Math.max(24, Math.floor((W * H) / 24000));
+      particles = Array.from({ length: count }, () => ({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: 1.2 + Math.random() * 2.4,
+        vx: (Math.random() - 0.5) * 0.22,
+        vy: (Math.random() - 0.5) * 0.18,
+        alpha: 0.18 + Math.random() * 0.32,
+        hue: Math.random() < 0.5 ? 'blue' : (Math.random() < 0.5 ? 'violet' : 'emerald')
+      }));
+    }
+
+    function drawBackground() {
+      if (!ctx || !canvas) return;
+      ctx.clearRect(0, 0, W, H);
+
+      // Soft grid glow
+      const g1 = ctx.createRadialGradient(W * 0.25, H * 0.2, 0, W * 0.25, H * 0.2, Math.min(W, H) * 0.45);
+      g1.addColorStop(0, 'rgba(0,119,200,0.09)');
+      g1.addColorStop(1, 'rgba(0,119,200,0)');
+      ctx.fillStyle = g1;
+      ctx.fillRect(0, 0, W, H);
+
+      const g2 = ctx.createRadialGradient(W * 0.78, H * 0.24, 0, W * 0.78, H * 0.24, Math.min(W, H) * 0.38);
+      g2.addColorStop(0, 'rgba(0,139,211,0.08)');
+      g2.addColorStop(1, 'rgba(0,139,211,0)');
+      ctx.fillStyle = g2;
+      ctx.fillRect(0, 0, W, H);
+
+      // Floating nodes
+      particles.forEach(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        if (p.x < -20) p.x = W + 20;
+        if (p.x > W + 20) p.x = -20;
+        if (p.y < -20) p.y = H + 20;
+        if (p.y > H + 20) p.y = -20;
+
+        ctx.beginPath();
+        ctx.fillStyle = p.hue === 'blue' ? `rgba(0,119,200,${p.alpha})`
+                      : p.hue === 'violet' ? `rgba(0,139,211,${p.alpha})`
+                      : `rgba(0,166,81,${p.alpha})`;
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+
+      // Data flow lines
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const a = particles[i], b = particles[j];
+          const dx = a.x - b.x, dy = a.y - b.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < 110) {
+            const alpha = (1 - dist / 110) * 0.11;
+            ctx.beginPath();
+            ctx.strokeStyle = `rgba(59,130,246,${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.stroke();
+          }
+        }
+      }
+
+      // Neural network curved ribbons
+      ctx.save();
+      ctx.globalAlpha = 0.35;
+      ctx.strokeStyle = 'rgba(148,163,184,0.18)';
+      ctx.lineWidth = 1.2;
+      ctx.setLineDash([6, 10]);
+      ctx.lineDashOffset = -performance.now() * 0.03;
+      ctx.beginPath();
+      const y1 = H * 0.28, y2 = H * 0.58, y3 = H * 0.82;
+      ctx.moveTo(0, y1);
+      ctx.bezierCurveTo(W * 0.25, y1 - 40, W * 0.4, y2 + 30, W * 0.62, y2 - 20);
+      ctx.bezierCurveTo(W * 0.76, y2 - 45, W * 0.85, y3 + 25, W, y3 - 8);
+      ctx.stroke();
+      ctx.restore();
+
+      requestAnimationFrame(drawBackground);
+    }
+
+    function initCanvas() {
+      resizeCanvas();
+      drawBackground();
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    window.addEventListener('load', initCanvas);
+
+    // Smooth jump to anchor with offset for fixed header
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const id = this.getAttribute('href');
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        const y = target.getBoundingClientRect().top + window.pageYOffset - 88;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
